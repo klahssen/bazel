@@ -4,6 +4,7 @@ load("@bazel_gazelle//:def.bzl", "gazelle")
 # gazelle:prefix github.com/klahssen/bazel
 gazelle(
     name = "gazelle",
+    prefix = "github.com/klahssen/bazel",
 )
 
 # bazel run //:gazelle

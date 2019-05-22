@@ -1,4 +1,4 @@
-workspace(name = "bazel")
+workspace(name = "com_github_klahssen_bazel")
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 #load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
@@ -25,9 +25,3 @@ http_archive(
 load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies", "go_repository")
 
 gazelle_dependencies()
-
-go_repository(
-    name = "com_github_klahssen_bazel",
-    commit = "55dba024d1ea9f752e184987e52019bc1d613e71",
-    importpath = "github.com/klahssen/bazel",
-)
