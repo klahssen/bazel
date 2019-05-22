@@ -1,9 +1,7 @@
 package main
 
-import (
-	"github.com/klahssen/bazel/pkg/hello"
-)
+import "github.com/klahssen/bazel/pkg/greet"
 
 func main() {
-	hello.SayHello()
+	greet.SayHello()
 }
